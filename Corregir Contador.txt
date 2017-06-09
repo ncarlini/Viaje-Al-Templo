@@ -1,0 +1,11 @@
+SELECT * 
+FROM  `anotados` 
+WHERE idmiembro NOT 
+IN (
+
+SELECT id
+FROM onlineform
+)
+AND estaca =523690
+AND fecha =  '20/05/2017'
+LIMIT 0 , 30
